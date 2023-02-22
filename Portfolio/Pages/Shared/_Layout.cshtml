@@ -9,18 +9,30 @@
     <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-warning  box-shadow ">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Thomas Nathan Feeney</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-evenly">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="~/Thomas Nathan Feeney - CV.docx.pdf">CV</a>
@@ -29,9 +41,23 @@
                 </div>
             </div>
         </nav>
+
+
+
+
     </header>
+    <div class="introDiv container-fluid no-gutters">
+            <div class="row align-items-center">
+                <h1 class="display-4 a introH1">Thomas Nathan Feeney</h1>
+                <p class="introP">
+                    I am a Software Developer at <a href="https://tactuum.com/"> Tactuum</a>
+                    Please have a look around my portfolio to find my experiences to date.
+                </p>
+             </div>
+
+    </div>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>
