@@ -21,16 +21,20 @@ body {
 .navbar{
     background:none;
 }
-
+.avatarDiv{
+    border-radius:50%;
+    height:20vh;
+    width:20vh;
+    background-color:chartreuse;
+}
 
 .introDiv {
-    height: 80vh;
     width: 100%;
-    background: url('../img/Header.svg') no-repeat center;
+    //background: url('../img/Header.svg') no-repeat center;
     background-color: cadetblue;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: relative;
+    position:relative;
     margin: auto;
 }
