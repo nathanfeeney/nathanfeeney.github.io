@@ -1,12 +1,18 @@
 #main{
-    background-color: #e346de;
     color:#efefef;
+    background: rgb(136,0,196);
+    background: linear-gradient(17deg, rgba(136,0,196,1) 0%, rgba(183,56,158,1) 55%, rgba(255,0,217,1) 100%);
 }
 .navbar{
     font-weight: 700;
     color:#ffffff;
 }
-#landing-div{
+/* #landing-div{
+    
+    te
+}*/
+
+.content-div{
+    height: 100vh;
     border: 2px solid blue;
-    text-align: center;
 }
