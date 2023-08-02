@@ -11,8 +11,16 @@
     
     te
 }*/
+.header-cl{
+    height: 100vh;
+    
+}
+p{
+    vertical-align: middle;
+}
 
 .content-div{
     height: 100vh;
     border: 2px solid blue;
+    padding: 0% 3%;
 }
