@@ -1,7 +1,6 @@
 #main{
     color:#efefef;
-    background: rgb(136,0,196);
-    background: linear-gradient(17deg, rgba(136,0,196,1) 0%, rgba(183,56,158,1) 55%, rgba(255,0,217,1) 100%);
+    background: rgb(60, 60, 60);
 }
 .navbar{
     font-weight: 700;
@@ -15,12 +14,10 @@
     height: 100vh;
     
 }
-p{
-    vertical-align: middle;
-}
+
 
 .content-div{
     height: 100vh;
-    border: 2px solid blue;
+    border: 2px solid rgb(0, 212, 198);
     padding: 0% 3%;
 }
