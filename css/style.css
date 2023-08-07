@@ -5,13 +5,12 @@
 .navbar{
     font-weight: 700;
     color:#ffffff;
+    top: 0;
+    position: fixed;
 }
-/* #landing-div{
-    
-    te
-}*/
-
-
+#landing-div{
+   
+}
 
 .content-div{
     height: 100vh;
