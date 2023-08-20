@@ -9,38 +9,41 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg border-bottom-dark border-bottom sticky-top" data-bs-theme="dark" >
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">TNF</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#career">Career</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">CV</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
     <div id="main" class="container-fluid">
-        <nav class="navbar navbar-expand-lg border-bottom-dark border-bottom" data-bs-theme="dark" >
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">TNF</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#career">Career</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">CV</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
+        
        
-        <div id="landing-div" class="content-div row "  alt="Max-width 100%">
-                 
-            <h1 class="bg-success text-center">Thomas Nathan Feeney</h1>
+        <div id="landing-div" class="content-div row"  >
+            <div class="col-sm">
+                
+            <h1 class="text-center">Thomas Nathan Feeney</h1>
+            <img src="https://placehold.co/200" alt="profile photo" class="mx-auto d-block my-5">
             <div class="row">
 
                 <div class="col-sm-8">
@@ -50,7 +53,7 @@
                     </p>
                 </div>
                 <div class="col-sm-4">
-                    <h4>Accomplishments</h4>
+                    <h4><u>Accomplishments</u></h4>
                     <ul class="list-unstyled text-align-left">
                         <li>
                             <h5>
@@ -71,6 +74,8 @@
                     </ul>
                 </div>
             </div>
+            </div>
+            
             
            
         </div>
@@ -81,6 +86,9 @@
                     <h4>
                         Tactuum
                     </h4>
+                    <span>
+                        date - date
+                    </span>
                     <h6>
                         Junior Developer
                     </h6> 
@@ -94,6 +102,9 @@
                     <h4>
                         Kigtek
                     </h4>
+                    <span>
+                        date - date
+                    </span>
                     <h6>
                         Graduate Software Engineer
                     </h6> 
@@ -107,6 +118,9 @@
                     <h4>
                         University
                     </h4>
+                    <span>
+                        date - date
+                    </span>
                     <h6>
                         BSc Hons Computing Science
                     </h6> 
@@ -120,32 +134,27 @@
             </ul>
         </div>
         <div id="skills" class="content-div row">
-            <h6>Skills</h6>
+            <h3>Skills</h3>
             
         </div>
         <div id="projects" class="content-div row">
-            <h6>
+            <h3>
                 Projects
-            </h6>
+            </h3>
         </div>
     </div>
-    
-    </div>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
-    
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-    
-        <ul class="nav col-md-4 justify-content-end">
+    <footer class="py-3 ">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 light" data-bs-theme="dark">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Career</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Skills</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Projects</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
         </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc</p>
       </footer>
+    </div>
+    
         
 
     <!-- Declaring bootstrap scripts-->
