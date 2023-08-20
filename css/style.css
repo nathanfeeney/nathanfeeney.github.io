@@ -1,20 +1,36 @@
+/* colors
+#22223B - bg
+#4A4E69
+#9A8C98
+#C9ADA7
+#F2E9E4
+#ffffff - font
+*/
+*{
+    color:#F2E9E4;
+}
 #main{
-    color:#efefef;
-    background: rgb(60, 60, 60);
+    
+    background: #22223B;
 }
 .navbar{
     font-weight: 700;
-    color:#ffffff;
+    background: #22223B;
+    width: 100%;
+    top: 0;
+    position: fixed;
 }
-/* #landing-div{
-    
-    te
-}*/
-
-
-
+footer{
+   background-color: #22223B; 
+}
+#landing-div{
+   background-color: #4A4E69;
+   height: 100vh;
+}
+#skills{
+    background-color: #9A8C98;
+}
 .content-div{
-    height: 100vh;
     border: 2px solid rgb(0, 212, 198);
     padding: 0% 3%;
 }
