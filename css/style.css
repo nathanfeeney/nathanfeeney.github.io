@@ -9,24 +9,58 @@
 *{
     color:#F2E9E4;
 }
+a:link{
+    text-decoration: none;
+}
+#career > h3{
+    text-align: center;
+    padding: 3vh 0;
+}
+#career{
+    background-color: #c9ADA7;
+}
 #main{
     
-    background: #22223B;
+    background: #292949;
 }
 .navbar{
     font-weight: 700;
-    background: #22223B;
+    background: #24243c;
     width: 100%;
     top: 0;
     position: fixed;
 }
-/*.exp-div:hover{
-    background-color: #C9ADA7;
+
+.workContent{
+   
+}
+.workLogo{
     
-}*/
+}
+.workTiles{
+    padding: 1%;
+    
+    overflow: hidden;
+    background-color: #9a8c98;
+}
+.workTiles:hover{
+    background-color: green;
+    scale: 1.01;
+}
 .skills-div {
     margin: 0 10%;
     text-align: center;
+}
+.buttonToContent{
+    border: 2px solid #c9ADA7;
+    width: 30vh;
+    text-align: center;
+    padding: 1% 0;
+    font-size: 3vh;
+}
+.buttonToContent:hover{
+    border-radius: 15px;
+    background-color: #c9ADA7;
 }
 footer{
    background-color: #22223B; 
@@ -36,9 +70,12 @@ footer{
    height: 100vh;
 }
 #skills{
-    background-color: #9A8C98;
+   
+}
+#projects{
+    
 }
 .content-div{
-    border: 2px solid rgb(0, 212, 198);
+   
     padding: 0% 3%;
 }
