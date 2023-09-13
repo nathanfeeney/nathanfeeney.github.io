@@ -16,11 +16,11 @@ html{
 a:link{
     text-decoration: none;
 }
-#career > h3{
+#experience > h3,h4{
     text-align: center;
     padding: 3vh 0;
 }
-#career{
+#experience{
     background-color: #c9ADA7;
 }
 #main{
@@ -53,7 +53,7 @@ a:link{
     scale: 1.01;
 }
 .skills-div {
-    margin: 0 10%;
+    
     text-align: center;
 }
 .buttonToContent{
@@ -75,7 +75,7 @@ footer{
    height: 100vh;
 }
 #skills{
-   margin: 7% 0 ;
+   
 }
 #projects{
     
