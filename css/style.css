@@ -44,7 +44,8 @@ a:link{
     padding: 1%;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #9a8c98;
+    border: 1px solid #746767;
+    background-color: #b59b95;
 }
 .workTiles:hover{
     background-color: green;
