@@ -9,6 +9,9 @@
 *{
     color:#F2E9E4;
 }
+html{
+    background-color: #c9ADA7;
+}
 a:link{
     text-decoration: none;
 }
@@ -39,7 +42,7 @@ a:link{
 }
 .workTiles{
     padding: 1%;
-    
+    border-radius: 10px;
     overflow: hidden;
     background-color: #9a8c98;
 }
