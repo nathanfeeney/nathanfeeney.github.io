@@ -11,6 +11,7 @@
 }
 html{
     background-color: #c9ADA7;
+    overflow-x: hidden;
 }
 a:link{
     text-decoration: none;
