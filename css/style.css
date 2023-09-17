@@ -12,6 +12,7 @@
 html{
     background-color: #c9ADA7;
     overflow-x: hidden;
+    height: 100%;
 }
 a:link{
     text-decoration: none;
@@ -19,6 +20,7 @@ a:link{
 #experience > h3,h4{
     text-align: center;
     padding: 3vh 0;
+    height: 1vh;
 }
 #experience{
     background-color: #c9ADA7;
@@ -40,6 +42,16 @@ a:link{
 }
 .workLogo{
     
+}
+.projectTile{
+    border: 2px solid white;
+}
+.projectTile > .projectContent{
+    background-color: #746767;
+}
+.projectTile > img {
+    width:100%;
+    max-width: 100%;
 }
 .workTiles{
     margin: 0;
@@ -73,6 +85,9 @@ footer{
 #landing-div{
    background-color: #4A4E69;
    height: 100vh;
+}
+#work{
+    
 }
 #skills{
    
