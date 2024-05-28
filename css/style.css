@@ -83,7 +83,8 @@ footer{
    background-color: #22223B; 
 }
 #landing-div{
-   background-color: #4A4E69;
+   /* background-color: #4A4E69; */
+   background-image: url(/img/header.png);
    height: 100vh;
 }
 #work{
