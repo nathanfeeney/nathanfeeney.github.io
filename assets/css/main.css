@@ -1767,7 +1767,7 @@ input, select, textarea {
 	header h6 + p {
 		font-size: 0.9em;
 	}
-
+	
 	header.major {
 		margin: 0 0 3.5em 0;
 	}
