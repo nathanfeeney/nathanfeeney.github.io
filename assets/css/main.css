@@ -2663,6 +2663,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		
 	}
 
 		.spotlight .image {
@@ -2677,6 +2678,8 @@ input, select, textarea {
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+				max-height: 45dvh;
+				
 			}
 
 		.spotlight .content {
@@ -3440,7 +3443,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
 		background: #2e3842;
-		height: 3em;
+		height: 1vh;
 		left: 0;
 		line-height: 3em;
 		position: fixed;
