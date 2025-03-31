@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Affordability Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>House Affordability Calculator</h1>
+        
+        <h2>Option 1: Enter House Price, Equity & Mortgage</h2>
+        <label for="housePrice">House Price (£):</label>
+        <input type="number" id="housePrice">
+        
+        <label for="equity">Your Equity (£):</label>
+        <input type="number" id="equity">
+        
+        <label for="income">Your Annual Income (£):</label>
+        <input type="number" id="income">
+        
+        <label for="multiplier">Mortgage Multiplier:</label>
+        <select id="multiplier">
+            <option value="4">4x</option>
+            <option value="4.5">4.5x</option>
+            <option value="5">5x</option>
+        </select>
+        
+        <button onclick="calculateAffordability()">Check Affordability</button>
+        
+        <h2>Option 2: Enter Equity Only</h2>
+        <label for="equityOnly">Your Equity (£):</label>
+        <input type="number" id="equityOnly">
+        
+        <button onclick="calculateMaxHousePrice()">Find Max House Price</button>
+        
+        <div id="result"></div>
+    </div>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input, select {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: left;
+        }
+    </style>
+    
+    <script>
+        function calculateAffordability() {
+            let housePrice = parseFloat(document.getElementById('housePrice').value);
+            let equity = parseFloat(document.getElementById('equity').value);
+            let income = parseFloat(document.getElementById('income').value);
+            let multiplier = parseFloat(document.getElementById('multiplier').value);
+            
+            let mortgageAmount = income * multiplier; // Calculate mortgage limit
+            let totalBuyingPower = equity + mortgageAmount;
+            
+            let stampDuty = housePrice * 0.05; // Example: 5% stamp duty
+            let lawyerFees = 2000; // Fixed fee
+            let totalCost = housePrice + stampDuty + lawyerFees;
+            let remainingFunds = totalBuyingPower - totalCost;
+            
+            let breakdown = `
+                <h3>Breakdown:</h3>
+                <p>House Price: £${housePrice.toFixed(2)}</p>
+                <p>Equity: £${equity.toFixed(2)}</p>
+                <p>Mortgage Amount: £${mortgageAmount.toFixed(2)}</p>
+                <p>Total Buying Power: £${totalBuyingPower.toFixed(2)}</p>
+                <p>Stamp Duty (5%): £${stampDuty.toFixed(2)}</p>
+                <p>Lawyer Fees: £${lawyerFees.toFixed(2)}</p>
+                <p>Total Cost: £${totalCost.toFixed(2)}</p>
+                <p><strong>${remainingFunds >= 0 ? 'You can afford this house! Remaining Funds: £' + remainingFunds.toFixed(2) : 'You cannot afford this house. You need an extra £' + Math.abs(remainingFunds).toFixed(2)}</strong></p>
+            `;
+            
+            document.getElementById('result').innerHTML = breakdown;
+        }
+        
+        function calculateMaxHousePrice() {
+            let equity = parseFloat(document.getElementById('equityOnly').value);
+            let lawyerFees = 2000;
+            let maxHousePrice = (equity - lawyerFees) / 1.05; // Reverse calculating with stamp duty
+            
+            let breakdown = `
+                <h3>Breakdown:</h3>
+                <p>Available Equity: £${equity.toFixed(2)}</p>
+                <p>Lawyer Fees: £${lawyerFees.toFixed(2)}</p>
+                <p>Maximum House Price (after fees): £${maxHousePrice.toFixed(2)}</p>
+                <p><strong>${maxHousePrice > 0 ? 'You can afford a house worth up to £' + maxHousePrice.toFixed(2) : 'Your equity is too low to afford a house after fees.'}</strong></p>
+            `;
+            
+            document.getElementById('result').innerHTML = breakdown;
+        }
+    </script>
+</body>
+</html>
