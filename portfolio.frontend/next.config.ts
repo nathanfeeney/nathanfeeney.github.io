@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-   output: 'export',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Only enable export in production builds
+  ...(process.env.NODE_ENV === 'production' && {
+    output: 'export',
+  }),
 };
 
 export default nextConfig;
