@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/42879de7b8087bc9.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"buildId":"7niHj5BnGafEY3H80jWhw","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","h1",null,{"children":"Content from Umbraco"}],["$","pre",null,{"children":"{\n  \"total\": 1,\n  \"items\": [\n    {\n      \"contentType\": \"content\",\n      \"name\": \"Portfolio\",\n      \"createDate\": \"2025-12-08T22:20:14.9940722Z\",\n      \"updateDate\": \"2025-12-08T22:20:15.6781245Z\",\n      \"route\": {\n        \"path\": \"/\",\n        \"queryString\": null,\n        \"startItem\": {\n          \"id\": \"48f9769a-e236-4897-9e81-a8037a687ede\",\n          \"path\": \"portfolio\"\n        }\n      },\n      \"id\": \"48f9769a-e236-4897-9e81-a8037a687ede\",\n      \"properties\": {\n        \"headline\": \"HEADLESS HORSEMEN\"\n      },\n      \"cultures\": {}\n    }\n  ]\n}"}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
-4:null
