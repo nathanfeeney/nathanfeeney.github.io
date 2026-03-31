@@ -42,3 +42,31 @@ toggle.addEventListener('click', () => {
 
 // Init
 updateToggle();
+
+const burgerBtn = document.getElementById('burger-btn');
+const navLinks  = document.getElementById('nav-links');
+
+burgerBtn.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  burgerBtn.classList.toggle('open', isOpen);
+  burgerBtn.setAttribute('aria-expanded', isOpen);
+  burgerBtn.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+});
+
+// Close menu when a link is clicked
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    burgerBtn.classList.remove('open');
+    burgerBtn.setAttribute('aria-expanded', false);
+  });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!burgerBtn.contains(e.target) && !navLinks.contains(e.target)) {
+    navLinks.classList.remove('open');
+    burgerBtn.classList.remove('open');
+    burgerBtn.setAttribute('aria-expanded', false);
+  }
+});
