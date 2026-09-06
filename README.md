@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio components — ready to drop in
 
-## Getting Started
+Copy these into your Next.js project, preserving the folder structure:
 
-First, run the development server:
+- `components/*.tsx` → into your project's `components/` folder
+- `hooks/useReveal.ts` → into your project's `hooks/` folder (create it if it doesn't exist)
+- `app/page.tsx` → replaces your existing homepage
+- `app/globals.css` → replaces your existing globals.css (keeps your original color
+  variables and dark mode system, plus the Tailwind typography plugin line)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## In Codespaces
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Easiest way: use the file explorer to create each file at the matching path, then paste
+the contents in from each file here.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's included
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `Header.tsx` — nav, burger menu, theme toggle wiring (client component)
+- `ThemeToggle.tsx` — dark/light toggle with localStorage persistence (client component)
+- `Hero.tsx`, `About.tsx`, `Skills.tsx`, `Experience.tsx`, `Projects.tsx`, `Education.tsx`,
+  `Contact.tsx`, `Footer.tsx` — static sections, ported directly from your original HTML
+- `useReveal.ts` — scroll-reveal animation hook, replaces the IntersectionObserver logic
+  from your old `main.js`
+- `page.tsx` — assembles everything and calls the reveal hook once
 
-## Learn More
+## Still needed
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Install the typography plugin if you haven't: `npm install -D @tailwindcss/typography`
+- The mobile nav currently shows/hides via Tailwind's `md:` breakpoint — tweak `Header.tsx`
+  if you want different behavior
+- Experience/Projects data is hardcoded in each component for now — could later be moved
+  into `content/experience.md` etc. if you want it editable without touching code
