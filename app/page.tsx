@@ -1,4 +1,4 @@
-'use client';
+// app/page.tsx
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -8,13 +8,12 @@ import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import useReveal from '@/hooks/useReveal';
+import RevealProvider from '@/components/RevealProvider';
 
 export default function Home() {
-  useReveal();
-
   return (
     <>
+      <RevealProvider />
       <Header />
       <Hero />
       <About />
