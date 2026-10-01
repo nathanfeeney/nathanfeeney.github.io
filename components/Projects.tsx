@@ -4,7 +4,7 @@ const posts = getAllProjects();
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-6 py-20 max-w-6xl mx-auto">
+    <section id="projects" className="px-6 py-10 max-w-6xl mx-auto">
       <div className="reveal text-sm uppercase tracking-wide text-[var(--text-3)] mb-6">Projects</div>
       <div className="reveal grid sm:grid-cols-3 gap-6">
         {posts.map((p) => (

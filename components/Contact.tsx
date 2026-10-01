@@ -6,7 +6,7 @@ const LINKS = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-6 py-20 max-w-6xl mx-auto">
+    <section id="contact" className="px-6 py-10 max-w-6xl mx-auto">
       <div className="reveal grid md:grid-cols-2 gap-10">
         <div>
           <div className="text-sm uppercase tracking-wide text-[var(--text-3)] mb-4">Get In Touch</div>

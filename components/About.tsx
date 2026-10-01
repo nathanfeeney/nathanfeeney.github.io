@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="px-6 py-20 max-w-6xl mx-auto">
+    <section id="about" className="px-6 py-10 max-w-6xl mx-auto">
       <div className="reveal text-sm uppercase tracking-wide text-[var(--text-3)] mb-6">About Me</div>
       <div className="reveal grid md:grid-cols-2 gap-10">
         <div className="space-y-4 text-[var(--text-2)]">

@@ -9,6 +9,7 @@ import Education from '@/components/Education';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import RevealProvider from '@/components/RevealProvider';
+import Blogs from '@/components/Blogs';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Education />
+      <Blogs />
       <Contact />
       <Footer />
     </>

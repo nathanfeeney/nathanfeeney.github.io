@@ -31,7 +31,7 @@ const JOBS = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="px-6 py-20 max-w-6xl mx-auto">
+    <section id="experience" className="px-6 py-10 max-w-6xl mx-auto">
       <div className="reveal text-sm uppercase tracking-wide text-[var(--text-3)] mb-6">Work Experience</div>
       <div className="flex flex-col gap-10">
         {JOBS.map((job) => (

@@ -19,7 +19,7 @@ const SKILL_GROUPS = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="px-6 py-20 max-w-6xl mx-auto">
+    <section id="skills" className="px-6 py-10 max-w-6xl mx-auto">
       <div className="reveal text-sm uppercase tracking-wide text-[var(--text-3)] mb-6">Technical Skills</div>
       <div className="reveal grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {SKILL_GROUPS.map((group) => (

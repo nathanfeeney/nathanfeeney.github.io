@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="hero" className="grid md:grid-cols-2 gap-10 px-6 py-20 max-w-6xl mx-auto items-center">
+    <section id="hero" className="grid md:grid-cols-2 gap-10 px-6 py-10 max-w-6xl mx-auto items-center">
       <div>
         <div className="text-sm uppercase tracking-wide text-[var(--text-3)] mb-3">Developer</div>
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
@@ -10,7 +10,7 @@ export default function Hero() {
           Full-Stack Developer · Umbraco Certified Expert
         </p>
         <p className="text-[var(--text-2)] mb-8">
-          I build <strong>reliable, well-crafted web applications</strong> — from CMS
+          I build <strong>reliable, well-crafted web applications</strong>, from CMS
           platforms and clinical decision tools to interactive conference media. Based in
           the UK, with 4+ years across agencies, healthcare, and industrial tech.
         </p>
