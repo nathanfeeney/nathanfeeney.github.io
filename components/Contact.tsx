@@ -15,7 +15,7 @@ export default function Contact() {
           </h2>
           <p className="text-[var(--text-2)]">
             Currently working full-time, but always happy to connect, talk shop, or hear about
-            interesting ideas. Feel free to drop me a message — I'll get back to you when I can.
+            interesting ideas. Feel free to drop me a message, I'll get back to you when I can.
           </p>
         </div>
 
